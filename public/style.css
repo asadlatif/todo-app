@@ -1,9 +1,22 @@
 body{
     text-align: center;
+    background-color: black;
 }
 .BtnDelte{
-    color: aquamarine;
+    color: white;
+    background-color: black;
+    margin-left: 10%;
 }
 .BtnEdit{
     background-color: red;
+    
+}
+.maindiv{
+    border: 2px solid red;
+    border-radius: 5px;
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    margin-top: 10%;
+
 }

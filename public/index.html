@@ -5,9 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyA29u2VxCFWWSdPuuzphsw4R8rLqhXQOfM",
+          authDomain: "todo-asad.firebaseapp.com",
+          databaseURL: "https://todo-asad.firebaseio.com",
+          projectId: "todo-asad",
+          storageBucket: "todo-asad.appspot.com",
+          messagingSenderId: "379592465163",
+          appId: "1:379592465163:web:41d2dd97efe47fd2c8200e",
+          measurementId: "G-CJTS316ZK9"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
 </head>
 <body>
+<div class="maindiv">
     <div>
+        <h2>Your Todo Application</h2>
+    </div>
+    <div >
         <input placeholder="Enter Todo" type="text" id="todo-item">
         <button onclick="addTodo()">ADD ITEM</button>
         <button onclick="deleteAll()">DELETE ALL</button>
@@ -17,6 +39,7 @@
 
         </ul>
     </div>
+</div>
     
 
 
